@@ -33,7 +33,7 @@ Finally, enable all of the rules that you would like to use.
 {
   "rules": {
     "underscore/prop-shorthand": 2,
-    "underscore/matches-shorthand": [2, "always", 3],
+    "underscore/matches-shorthand": [2, "always"],
     "underscore/preferred-alias": 2,
     "underscore/prefer-map": 2,
     "underscore/collection-return": 2,
