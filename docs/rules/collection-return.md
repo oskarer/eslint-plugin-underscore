@@ -1,6 +1,6 @@
 # Collection Return Statement
 
-When using a lodash collection method that isn't forEach, the iteratee should return a value, otherwise it could result in either unclear code or unexpected results.
+When using a Underscore collection method that isn't `each`, the iteratee should return a value, otherwise it could result in either unclear code or unexpected results.
 
 ## Rule Details
 
@@ -24,6 +24,6 @@ The following patterns are not considered warnings:
 
 _.map(x => x + 1);
 
-_.forEach(arr, function(a) { console.log(a); });
+_.each(arr, function(a) { console.log(a); });
  
 ```

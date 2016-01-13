@@ -1,6 +1,6 @@
 # Prefer filter
 
-When using _.forEach with a single `if` statement, you should probably use `_.filter` or `_.some` instead.
+When using _.each with a single `if` statement, you should probably use `_.filter` or `_.some` instead.
 
 ## Rule Details
 
@@ -9,19 +9,19 @@ This rule takes one argument, maximum path length (default is 3).
 The following patterns are considered warnings:
 
 ```js
-_(users).forEach(function(user) { 
+_(users).each(function(user) { 
   if (user.name.familyName) {
   // ...
   }
 });
 
-_(users).forEach(function(user) { 
+_(users).each(function(user) { 
   if (!user.active) {
   // ...
   }
 });
 
-_.forEach(users, function(user) { 
+_.each(users, function(user) { 
   if (user.name.givenName === 'Bob') {
   // ...
   }

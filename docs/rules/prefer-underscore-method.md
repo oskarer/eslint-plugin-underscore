@@ -1,6 +1,6 @@
-# Prefer Lodash method
+# Prefer Underscore method
 
-When using native functions like forEach and map, it's often better to use the Underscore implementation. 
+When using native functions like `each` and `map`, it's often better to use the Underscore implementation. 
 
 ## Rule Details
 

@@ -1,6 +1,6 @@
 # Prefer map
 
-When using `_.forEach` that pushes into an array, it could improve readability to use `_.map` instead.
+When using `_.each` that pushes into an array, it could improve readability to use `_.map` instead.
 
 ## Rule Details
 
