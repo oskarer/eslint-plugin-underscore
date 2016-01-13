@@ -1,7 +1,5 @@
-ESLint-plugin-lodash3
+ESLint-plugin-underscore
 ===================
-
-[![Maintenance Status][status-image]][status-url] [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url]
 
 Forked from [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash3)
 
@@ -73,7 +71,7 @@ Finally, enable all of the rules that you would like to use.
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
 * [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases
 * [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.forEach` with a `push` inside.
-* [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of lodash collection methods that aren't `forEach`.
+* [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of Underscore collection methods that aren't `forEach`.
 
 # List of Lodash rules which are __not__ yet supported
 
