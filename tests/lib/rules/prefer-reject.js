@@ -16,15 +16,11 @@ var errors = [{message: 'Prefer _.reject over negative condition'}];
 ruleTester.run('prefer-reject', rule, {
     valid: [
         '_.filter(users, function(user) {return !user.active && isSomething;});',
-        '_.filter(users, function(user) {return !f(user);});'
+        '_.filter(users, function(user) {return !f(user);});',
+        '_(users).map(t).filter(function(user) {return !user.name.givenName})',
+        '_.filter(users, function(user) {return user.name.givenName !== "Bob";});'
     ],
     invalid: [{
-        code: '_(users).map(t).filter(function(user) {return !user.name.givenName})',
-        errors: errors
-    }, {
-        code: '_.filter(users, function(user) {return user.name.givenName !== "Bob";});',
-        errors: errors
-    }, {
         code: '_.filter(users, function(user) {return !user.isSomething;});',
         errors: errors
     }, {
