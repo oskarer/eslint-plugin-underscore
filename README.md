@@ -49,7 +49,6 @@ Finally, enable all of the rules that you would like to use.
     "underscore/unwrap": 2,
     "underscore/no-double-unwrap": 2,
     "underscore/prefer-wrapper-method": 2,
-    "underscore/prefer-thru": 2,
     "underscore/prefer-lodash-chain": 2,
     "underscore/prefer-lodash-method": 2,
     "underscore/prefer-lodash-typecheck": 2,
@@ -82,7 +81,6 @@ Finally, enable all of the rules that you would like to use.
 * [unwrap](docs/rules/unwrap.md): Prevent chaining without evaluation via `value()` or non-chainable methods like `max()`.,
 * [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`)
 * [prefer-wrapper-method](docs/rules/prefer-wrapper-method.md): Prefer using array and string methods in the chain and not the initial value, e.g. `_(str).split(' ')...`
-* [prefer-thru](docs/rules/prefer-thru.md): Prefer using `_.prototype.thru` in the chain and not call functions in the initial value, e.g. `_(x).thru(f).map(g)...`
 * [prefer-lodash-chain](docs/rules/prefer-lodash-chain.md): Prefer using Lodash chains (e.g. `_.map`) over native and mixed chains.
 * [prefer-lodash-method](docs/rules/prefer-lodash-method.md): Prefer using Lodash collection methods (e.g. `_.map`) over native array methods.
 * [prefer-lodash-typecheck](docs/rules/prefer-lodash-typecheck.md): Prefer using `_.is*` methods over `typeof` and `instanceof` checks when applicable.
