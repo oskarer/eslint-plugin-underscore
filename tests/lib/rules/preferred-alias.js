@@ -13,16 +13,16 @@ var RuleTester = require('eslint').RuleTester;
 // ------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var toErrorObject = require('../testUtil/toErrorObject').fromMessage("Method 'each' is an alias, for consistency prefer using 'forEach'");
+var toErrorObject = require('../testUtil/toErrorObject').fromMessage("Method 'forEach' is an alias, for consistency prefer using 'each'");
 ruleTester.run('preferred-alias', rule, {
     valid: [
-        '_.forEach();',
-        '_(users).map().value().each(function (i) { i.f(); });',
+        '_.each();',
+        '_(users).map().value().forEach(function (i) { i.f(); });',
         'var x = _.map(y, function (i) { return i; });'
     ],
     invalid: [
-        '_.each(users, function (i) { i.f(); });',
-        '_(users).each(function (i) { i.f(); });',
-        '_(users).map(function (i) { return i; }).each(function (i) {});'
+        '_.forEach(users, function (i) { i.f(); });',
+        '_(users).forEach(function (i) { i.f(); });',
+        '_(users).map(function (i) { return i; }).forEach(function (i) {});'
     ].map(toErrorObject)
 });

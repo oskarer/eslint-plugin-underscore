@@ -1,6 +1,6 @@
 # Preferred Alias
 
-Some Lodash methods have one or more aliases, which can lead to inconsistent code and decrease readability. 
+Some Underscore methods have one or more aliases, which can lead to inconsistent code and decrease readability. 
 
 ## Rule Details
 

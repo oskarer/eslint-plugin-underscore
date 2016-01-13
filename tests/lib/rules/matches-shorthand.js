@@ -20,10 +20,10 @@ var errors = {
 ruleTester.run('matches-shorthand', rule, {
     valid: [
         'var isPublic = _.find([], function (i) { return x.id; });',
-        'var r = _.findIndex(this.packages, {name: name});',
+        'var r = _.reject(this.packages, {name: name});',
         'var isPublic = _.map([], function (i) { return i.id + "?"; });',
         'lang.fonts = _.filter(lang.fonts, function (font) { return font.permissions !== "legacy"});',
-        'var isPublic = _.findLastIndex([], function (i) { return i.id == 3; });',
+        'var isPublic = _.reject([], function (i) { return i.id == 3; });',
         {code: 'var isPublic = _.find([], function(i) { return i.id === 3});', options: ['never']}
     ],
     invalid: [{
@@ -41,7 +41,7 @@ ruleTester.run('matches-shorthand', rule, {
         ecmaFeatures: {arrowFunctions: true},
         errors: errors.always
     }, {
-        code: 'var isPublic = _.findIndex(arr, (i) => {return i.id === 3})',
+        code: 'var isPublic = _.reject(arr, (i) => {return i.id === 3})',
         ecmaFeatures: {arrowFunctions: true},
         errors: errors.always
     }, {
@@ -57,14 +57,14 @@ ruleTester.run('matches-shorthand', rule, {
         ecmaFeatures: {arrowFunctions: true},
         errors: errors.always
     }, {
-        code: '_.findLastIndex(arr, function(i) { return i[b].c === compId; });',
+        code: '_.reject(arr, function(i) { return i[b].c === compId; });',
         options: ['always', 3, true],
         errors: errors.always
     }, {
-        code: '_.findLastIndex(arr, function(i) { return i.b.c === compId; });',
+        code: '_.reject(arr, function(i) { return i.b.c === compId; });',
         errors: errors.always
     }, {
-        code: '_.findLastIndex(arr, {b: {c: compId}});',
+        code: '_.reject(arr, {b: {c: compId}});',
         options: ['never'],
         errors: errors.never
     }]

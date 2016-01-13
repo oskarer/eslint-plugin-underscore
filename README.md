@@ -34,34 +34,35 @@ Finally, enable all of the rules that you would like to use.
 ```javascript
 {
   "rules": {
-    "lodash3/prop-shorthand": 2,
-    "lodash3/matches-shorthand": [2, "always", 3],
-    "lodash3/matches-prop-shorthand": [2, "always"],
-    "lodash3/prefer-chain": [2, 3],
-    "lodash3/preferred-alias": 2,
-    "lodash3/no-single-chain": 2,
-    "lodash3/prefer-reject": [2, 3],
-    "lodash3/prefer-filter": [2, 3],
-    "lodash3/no-unnecessary-bind": 2,
-    "lodash3/unwrap": 2,
-    "lodash3/prefer-compact": 2,
-    "lodash3/no-double-unwrap": 2,
-    "lodash3/prefer-map": 2,
-    "lodash3/prefer-wrapper-method": 2,
-    "lodash3/prefer-invoke": 2,
-    "lodash3/prefer-thru": 2,
-    "lodash3/prefer-lodash-chain": 2,
-    "lodash3/prefer-lodash-method": 2,
-    "lodash3/prefer-lodash-typecheck": 2,
-    "lodash3/no-commit": 2,
-    "lodash3/prefer-get": [2, 3],
-    "lodash3/collection-return": 2,
-    "lodash3/prefer-matches": [2, 3],
-    "lodash3/prefer-times": 2,
-    "lodash3/prefer-startswith": 2,
-    "lodash3/prefer-noop": 2,
-    "lodash3/prefer-constant": 2,
-    "lodash3/chain-style": [2, "as-needed"]
+    "underscore/prop-shorthand": 2,
+    "underscore/matches-shorthand": [2, "always", 3],
+    "underscore/preferred-alias": 2,
+    "underscore/prefer-map": 2,
+    "underscore/collection-return": 2,
+
+    // The bellow rules are not (yet) supported
+    "underscore/prefer-chain": [2, 3],
+    "underscore/no-single-chain": 2,
+    "underscore/prefer-reject": [2, 3],
+    "underscore/prefer-filter": [2, 3],
+    "underscore/no-unnecessary-bind": 2,
+    "underscore/unwrap": 2,
+    "underscore/prefer-compact": 2,
+    "underscore/no-double-unwrap": 2,
+    "underscore/prefer-wrapper-method": 2,
+    "underscore/prefer-invoke": 2,
+    "underscore/prefer-thru": 2,
+    "underscore/prefer-lodash-chain": 2,
+    "underscore/prefer-lodash-method": 2,
+    "underscore/prefer-lodash-typecheck": 2,
+    "underscore/no-commit": 2,
+    "underscore/prefer-get": [2, 3],
+    "underscore/prefer-matches": [2, 3],
+    "underscore/prefer-times": 2,
+    "underscore/prefer-startswith": 2,
+    "underscore/prefer-noop": 2,
+    "underscore/prefer-constant": 2,
+    "underscore/chain-style": [2, "as-needed"]
   }
 }
 ```
@@ -69,9 +70,13 @@ Finally, enable all of the rules that you would like to use.
 # List of supported rules
 
 * [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax
-* [matches-prop-shorthand](docs/rules/matches-prop-shorthand.md): Prefer matches property shorthand syntax
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
 * [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases
+* [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.forEach` with a `push` inside.
+* [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of lodash collection methods that aren't `forEach`.
+
+# List of Lodash rules which are __not__ yet supported
+
 * [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested lodash calls
 * [no-single-chain](docs/rules/no-single-chain.md): Prevent chaining syntax for single method, e.g. `_(x).map().value()`
 * [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`
@@ -80,7 +85,6 @@ Finally, enable all of the rules that you would like to use.
 * [unwrap](docs/rules/unwrap.md): Prevent chaining without evaluation via `value()` or non-chainable methods like `max()`.,
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
 * [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`)
-* [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.forEach` with a `push` inside.
 * [prefer-wrapper-method](docs/rules/prefer-wrapper-method.md): Prefer using array and string methods in the chain and not the initial value, e.g. `_(str).split(' ')...`
 * [prefer-invoke](docs/rules/prefer-invoke.md): Prefer using `_.invoke` over `_.map` with a method call inside.
 * [prefer-thru](docs/rules/prefer-thru.md): Prefer using `_.prototype.thru` in the chain and not call functions in the initial value, e.g. `_(x).thru(f).map(g)...`
@@ -89,7 +93,6 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-lodash-typecheck](docs/rules/prefer-lodash-typecheck.md): Prefer using `_.is*` methods over `typeof` and `instanceof` checks when applicable.
 * [no-commit](docs/rules/no-commit.md): Do not use `.commit()` on chains that should end with `.value()`
 * [prefer-get](docs/rules/prefer-get.md): Prefer using `_.get` or `_.has` over expression chains like `a && a.b && a.b.c`.
-* [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of lodash collection methods that aren't `forEach`.
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
 * [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
 * [prefer-startswth](docs/rules/prefer-startswith.md): Prefer `_.startsWith` over `a.indexOf(b) === 0`.
