@@ -1,7 +1,7 @@
+Forked from [eslint-plugin-lodash3](https://github.com/wix/eslint-plugin-lodash3)
+
 ESLint-plugin-underscore
 ===================
-
-Forked from [eslint-plugin-lodash3](https://github.com/wix/eslint-plugin-lodash3)
 
 Linting rules for [Underscore](http://underscorejs.org/)
 
