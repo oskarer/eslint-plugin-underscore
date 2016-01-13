@@ -3,7 +3,9 @@ ESLint-plugin-lodash3
 
 [![Maintenance Status][status-image]][status-url] [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url]
 
-Lodash3 specific linting rules for ESLint
+Forked from [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash3)
+
+Linting rules for [Underscore](http://underscorejs.org/)
 
 # Installation
 
@@ -11,24 +13,25 @@ Install [ESLint](https://www.github.com/eslint/eslint) either locally or globall
 
     npm install eslint
 
-If you installed `ESLint` globally, you have to install lodash3 plugin globally too. Otherwise, install it locally.
+If you installed `ESLint` globally, you have to install the Underscore plugin
+globally too. Otherwise, install it locally.
 
-    $ npm install eslint-plugin-lodash3
+    $ npm install eslint-plugin-underscore
 
 # Configuration
 
-Add `plugins` section and specify ESLint-plugin-lodash3 as a plugin.
+Add `plugins` section and specify ESLint-plugin-underscore as a plugin.
 
 ```json
 {
-  "plugins": ["lodash3"]
+  "plugins": ["underscore"]
 }
 ```
 
 
 Finally, enable all of the rules that you would like to use.
 
-```json
+```javascript
 {
   "rules": {
     "lodash3/prop-shorthand": 2,
@@ -96,22 +99,7 @@ Finally, enable all of the rules that you would like to use.
 
 # License
 
-ESLint-plugin-lodash3 is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+ESLint-plugin-underscore is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
-[npm-url]: https://npmjs.org/package/eslint-plugin-lodash3
-[npm-image]: http://img.shields.io/npm/v/eslint-plugin-lodash3.svg?style=flat-square
-
-[travis-url]: https://travis-ci.org/wix/eslint-plugin-lodash3
-[travis-image]: http://img.shields.io/travis/wix/eslint-plugin-lodash3/master.svg?style=flat-square
-
-[deps-url]: https://david-dm.org/wix/eslint-plugin-lodash3
-[deps-image]: https://img.shields.io/david/dev/wix/eslint-plugin-lodash3.svg?style=flat-square
-
-[coverage-url]: https://coveralls.io/r/wix/eslint-plugin-lodash3?branch=master
-[coverage-image]: http://img.shields.io/coveralls/wix/eslint-plugin-lodash3/master.svg?style=flat-square
-
-[climate-url]: https://codeclimate.com/github/wix/eslint-plugin-lodash3
-[climate-image]: http://img.shields.io/codeclimate/github/wix/eslint-plugin-lodash3.svg?style=flat-square
-
-[status-url]: https://github.com/wix/eslint-plugin-lodash3/pulse
-[status-image]: http://img.shields.io/badge/status-maintained-brightgreen.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/eslint-plugin-underscore
+[npm-image]: http://img.shields.io/npm/v/eslint-plugin-underscore.svg?style=flat-square
