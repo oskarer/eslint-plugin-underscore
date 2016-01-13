@@ -49,7 +49,7 @@ Finally, enable all of the rules that you would like to use.
     "underscore/preferred-alias": 2,
     "underscore/prop-shorthand": 2,
 
-    // The bellow rules are not (yet) supported
+    // The below rules are not (yet) supported
     "underscore/prefer-chain": [2, 3],
     "underscore/no-single-chain": 2,
     "underscore/unwrap": 2,
