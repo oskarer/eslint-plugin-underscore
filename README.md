@@ -57,7 +57,6 @@ Finally, enable all of the rules that you would like to use.
     "underscore/prefer-get": [2, 3],
     "underscore/prefer-matches": [2, 3],
     "underscore/prefer-times": 2,
-    "underscore/prefer-startswith": 2,
     "underscore/prefer-noop": 2,
     "underscore/prefer-constant": 2,
     "underscore/chain-style": [2, "as-needed"]
@@ -93,7 +92,6 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-get](docs/rules/prefer-get.md): Prefer using `_.get` or `_.has` over expression chains like `a && a.b && a.b.c`.
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
 * [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
-* [prefer-startswth](docs/rules/prefer-startswith.md): Prefer `_.startsWith` over `a.indexOf(b) === 0`.
 * [prefer-noop](docs/rules/prefer-noop.md): Prefer `_.noop` over empty functions.
 * [prefer-constant](docs/rules/prefer-constant.md): Prefer `_.constant` over functions returning literals.
 * [chain-style](docs/rules/chain-style.md): Enforce a specific chain style: explicit, implicit, or explicit only when necessary.
