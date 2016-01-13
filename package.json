@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-underscore",
-  "version": "0.5.1",
-  "author": "IdoK <?+npm@gmail.com>",
+  "version": "0.0.2",
+  "author": "Jordan Eldredge <jordan@jordaneldredge.com>",
   "description": "Underscore specific linting rules for ESLint",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "eslint",
     "eslint-plugin",
     "eslintplugin",
-    "lodash"
+    "underscore"
   ],
   "license": "MIT"
 }
