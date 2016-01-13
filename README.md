@@ -34,6 +34,7 @@ Finally, enable all of the rules that you would like to use.
   "rules": {
     "underscore/collection-return": 2,
     "underscore/matches-shorthand": [2, "always"],
+    "underscore/no-unnecessary-bind": 2,
     "underscore/prefer-compact": 2,
     "underscore/prefer-constant": 2,
     "underscore/prefer-filter": [2, 3],
@@ -50,7 +51,6 @@ Finally, enable all of the rules that you would like to use.
     // The bellow rules are not (yet) supported
     "underscore/prefer-chain": [2, 3],
     "underscore/no-single-chain": 2,
-    "underscore/no-unnecessary-bind": 2,
     "underscore/unwrap": 2,
     "underscore/no-double-unwrap": 2,
     "underscore/prefer-wrapper-method": 2,
@@ -65,6 +65,7 @@ Finally, enable all of the rules that you would like to use.
 
 * [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of Underscore collection methods that aren't `forEach`.
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
+* [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
 * [prefer-constant](docs/rules/prefer-constant.md): Prefer `_.constant` over functions returning literals.
 * [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.forEach` with an `if` statement inside.
@@ -82,7 +83,6 @@ Finally, enable all of the rules that you would like to use.
 
 * [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested lodash calls
 * [no-single-chain](docs/rules/no-single-chain.md): Prevent chaining syntax for single method, e.g. `_(x).map().value()`
-* [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
 * [unwrap](docs/rules/unwrap.md): Prevent chaining without evaluation via `value()` or non-chainable methods like `max()`.,
 * [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`)
 * [prefer-wrapper-method](docs/rules/prefer-wrapper-method.md): Prefer using array and string methods in the chain and not the initial value, e.g. `_(str).split(' ')...`
