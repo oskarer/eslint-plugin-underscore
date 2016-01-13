@@ -53,7 +53,6 @@ Finally, enable all of the rules that you would like to use.
     "underscore/prefer-lodash-chain": 2,
     "underscore/prefer-lodash-method": 2,
     "underscore/prefer-lodash-typecheck": 2,
-    "underscore/no-commit": 2,
     "underscore/prefer-matches": [2, 3],
     "underscore/prefer-times": 2,
     "underscore/prefer-noop": 2,
@@ -87,7 +86,6 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-lodash-chain](docs/rules/prefer-lodash-chain.md): Prefer using Lodash chains (e.g. `_.map`) over native and mixed chains.
 * [prefer-lodash-method](docs/rules/prefer-lodash-method.md): Prefer using Lodash collection methods (e.g. `_.map`) over native array methods.
 * [prefer-lodash-typecheck](docs/rules/prefer-lodash-typecheck.md): Prefer using `_.is*` methods over `typeof` and `instanceof` checks when applicable.
-* [no-commit](docs/rules/no-commit.md): Do not use `.commit()` on chains that should end with `.value()`
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
 * [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
 * [prefer-noop](docs/rules/prefer-noop.md): Prefer `_.noop` over empty functions.
