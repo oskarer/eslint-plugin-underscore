@@ -32,20 +32,20 @@ Finally, enable all of the rules that you would like to use.
 ```javascript
 {
   "rules": {
-    "underscore/prop-shorthand": 2,
-    "underscore/matches-shorthand": [2, "always"],
-    "underscore/preferred-alias": 2,
-    "underscore/prefer-map": 2,
     "underscore/collection-return": 2,
-    "underscore/prefer-reject": [2, 3],
-    "underscore/prefer-filter": [2, 3],
+    "underscore/matches-shorthand": [2, "always"],
     "underscore/prefer-compact": 2,
-    "underscore/prefer-invoke": 2,
-    "underscore/prefer-times": 2,
-    "underscore/prefer-noop": 2,
     "underscore/prefer-constant": 2,
-    "underscore/prefer-underscore-method": 2,
+    "underscore/prefer-filter": [2, 3],
+    "underscore/prefer-invoke": 2,
+    "underscore/prefer-map": 2,
     "underscore/prefer-matches": [2, 3],
+    "underscore/prefer-noop": 2,
+    "underscore/prefer-reject": [2, 3],
+    "underscore/prefer-times": 2,
+    "underscore/prefer-underscore-method": 2,
+    "underscore/preferred-alias": 2,
+    "underscore/prop-shorthand": 2,
 
     // The bellow rules are not (yet) supported
     "underscore/prefer-chain": [2, 3],
@@ -63,20 +63,20 @@ Finally, enable all of the rules that you would like to use.
 
 # List of supported rules
 
-* [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax
-* [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
-* [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases
-* [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.forEach` with a `push` inside.
 * [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of Underscore collection methods that aren't `forEach`.
-* [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`
-* [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.forEach` with an `if` statement inside.
+* [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
-* [prefer-invoke](docs/rules/prefer-invoke.md): Prefer using `_.invoke` over `_.map` with a method call inside.
-* [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
-* [prefer-noop](docs/rules/prefer-noop.md): Prefer `_.noop` over empty functions.
 * [prefer-constant](docs/rules/prefer-constant.md): Prefer `_.constant` over functions returning literals.
-* [prefer-underscore-method](docs/rules/prefer-underscore-method.md): Prefer using Underscore collection methods (e.g. `_.map`) over native array methods.
+* [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.forEach` with an `if` statement inside.
+* [prefer-invoke](docs/rules/prefer-invoke.md): Prefer using `_.invoke` over `_.map` with a method call inside.
+* [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.forEach` with a `push` inside.
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
+* [prefer-noop](docs/rules/prefer-noop.md): Prefer `_.noop` over empty functions.
+* [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`
+* [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
+* [prefer-underscore-method](docs/rules/prefer-underscore-method.md): Prefer using Underscore collection methods (e.g. `_.map`) over native array methods.
+* [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases
+* [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax
 
 # List of Lodash rules which are __not__ yet supported
 
