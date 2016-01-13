@@ -40,6 +40,7 @@ Finally, enable all of the rules that you would like to use.
     "underscore/prefer-reject": [2, 3],
     "underscore/prefer-filter": [2, 3],
     "underscore/prefer-compact": 2,
+    "underscore/prefer-invoke": 2,
 
     // The bellow rules are not (yet) supported
     "underscore/prefer-chain": [2, 3],
@@ -48,7 +49,6 @@ Finally, enable all of the rules that you would like to use.
     "underscore/unwrap": 2,
     "underscore/no-double-unwrap": 2,
     "underscore/prefer-wrapper-method": 2,
-    "underscore/prefer-invoke": 2,
     "underscore/prefer-thru": 2,
     "underscore/prefer-lodash-chain": 2,
     "underscore/prefer-lodash-method": 2,
@@ -72,6 +72,7 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`
 * [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.forEach` with an `if` statement inside.
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
+* [prefer-invoke](docs/rules/prefer-invoke.md): Prefer using `_.invoke` over `_.map` with a method call inside.
 
 # List of Lodash rules which are __not__ yet supported
 
@@ -81,7 +82,6 @@ Finally, enable all of the rules that you would like to use.
 * [unwrap](docs/rules/unwrap.md): Prevent chaining without evaluation via `value()` or non-chainable methods like `max()`.,
 * [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`)
 * [prefer-wrapper-method](docs/rules/prefer-wrapper-method.md): Prefer using array and string methods in the chain and not the initial value, e.g. `_(str).split(' ')...`
-* [prefer-invoke](docs/rules/prefer-invoke.md): Prefer using `_.invoke` over `_.map` with a method call inside.
 * [prefer-thru](docs/rules/prefer-thru.md): Prefer using `_.prototype.thru` in the chain and not call functions in the initial value, e.g. `_(x).thru(f).map(g)...`
 * [prefer-lodash-chain](docs/rules/prefer-lodash-chain.md): Prefer using Lodash chains (e.g. `_.map`) over native and mixed chains.
 * [prefer-lodash-method](docs/rules/prefer-lodash-method.md): Prefer using Lodash collection methods (e.g. `_.map`) over native array methods.
