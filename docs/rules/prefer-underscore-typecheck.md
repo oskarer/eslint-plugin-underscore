@@ -1,6 +1,6 @@
-# Prefer Lodash typecheck
+# Prefer Underscore typecheck
 
-Getting the specific type of a variable or expression can be done with `typeof` or `instanceof`. However, it's often more expressive to use the Lodash equivalent function
+Getting the specific type of a variable or expression can be done with `typeof` or `instanceof`. However, it's often more expressive to use the Underscore equivalent function
 
 ## Rule Details
 
@@ -33,4 +33,4 @@ var isCar = truck instanceof Car;
 
 ## When Not To Use It
 
-If you do not want to enforce using Lodash methods for type checks, you should not use this rule.
+If you do not want to enforce using Underscore methods for type checks, you should not use this rule.

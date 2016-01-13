@@ -45,6 +45,7 @@ Finally, enable all of the rules that you would like to use.
     "underscore/prefer-reject": [2, 3],
     "underscore/prefer-times": 2,
     "underscore/prefer-underscore-method": 2,
+    "underscore/prefer-underscore-typecheck": 2,
     "underscore/preferred-alias": 2,
     "underscore/prop-shorthand": 2,
 
@@ -55,7 +56,6 @@ Finally, enable all of the rules that you would like to use.
     "underscore/no-double-unwrap": 2,
     "underscore/prefer-wrapper-method": 2,
     "underscore/prefer-lodash-chain": 2,
-    "underscore/prefer-lodash-typecheck": 2,
     "underscore/chain-style": [2, "as-needed"]
   }
 }
@@ -76,6 +76,7 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`
 * [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
 * [prefer-underscore-method](docs/rules/prefer-underscore-method.md): Prefer using Underscore collection methods (e.g. `_.map`) over native array methods.
+* [prefer-underscore-typecheck](docs/rules/prefer-underscore-typecheck.md): Prefer using `_.is*` methods over `typeof` and `instanceof` checks when applicable.
 * [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases
 * [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax
 
@@ -87,7 +88,6 @@ Finally, enable all of the rules that you would like to use.
 * [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`)
 * [prefer-wrapper-method](docs/rules/prefer-wrapper-method.md): Prefer using array and string methods in the chain and not the initial value, e.g. `_(str).split(' ')...`
 * [prefer-lodash-chain](docs/rules/prefer-lodash-chain.md): Prefer using Lodash chains (e.g. `_.map`) over native and mixed chains.
-* [prefer-lodash-typecheck](docs/rules/prefer-lodash-typecheck.md): Prefer using `_.is*` methods over `typeof` and `instanceof` checks when applicable.
 * [chain-style](docs/rules/chain-style.md): Enforce a specific chain style: explicit, implicit, or explicit only when necessary.
 
 # License
