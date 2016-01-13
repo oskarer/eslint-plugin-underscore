@@ -1,6 +1,6 @@
 # Prefer Lodash method
 
-When using native functions like forEach and map, it's often better to use the Lodash implementation. 
+When using native functions like forEach and map, it's often better to use the Underscore implementation. 
 
 ## Rule Details
 
@@ -31,4 +31,5 @@ _.map(a, f);
 
 ## When Not To Use It
 
-If you do not want to enforce using Lodash methods, you should not use this rule.
+If you do not want to enforce using Underscore methods, or are using a library like Backbone which impalements methods by the same name as the builtin methods, you should not use this rule.
+

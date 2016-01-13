@@ -4,7 +4,7 @@
 // Requirements
 // ------------------------------------------------------------------------------
 
-var rule = require('../../../lib/rules/prefer-lodash-method');
+var rule = require('../../../lib/rules/prefer-underscore-method');
 var RuleTester = require('eslint').RuleTester;
 
 // ------------------------------------------------------------------------------
@@ -12,7 +12,7 @@ var RuleTester = require('eslint').RuleTester;
 // ------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-ruleTester.run('prefer-lodash-method', rule, {
+ruleTester.run('prefer-underscore-method', rule, {
     valid: [
         'var x = _.map(arr, f)',
         'var x = _(arr).map(f).reduce(g)',
