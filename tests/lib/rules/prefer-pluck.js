@@ -29,7 +29,8 @@ ruleTester.run("prefer-pluck", rule, {
 
     valid: [
         "var ids = _.pluck(items, 'id');",
-        "var ids = _.map(items, function(item){ return item.id; });"
+        "var ids = _.map(items, function(item){ return item.id; });",
+        "var ids = _.map(items, {id: 1});"
     ],
 
     invalid: [
