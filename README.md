@@ -42,6 +42,7 @@ Finally, enable all of the rules that you would like to use.
     "underscore/prefer-map": 2,
     "underscore/prefer-matches": 2,
     "underscore/prefer-noop": 2,
+    "underscore/prefer-pluck": 2,
     "underscore/prefer-reject": 2,
     "underscore/prefer-times": 2,
     "underscore/prefer-underscore-method": 2,
@@ -73,6 +74,7 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.forEach` with a `push` inside.
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
 * [prefer-noop](docs/rules/prefer-noop.md): Prefer `_.noop` over empty functions.
+* [prefer-pluck](docs/rules/prefer-pluck.md): Prefer `_.pluck` over `_.map` when using property shorthand.
 * [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`
 * [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
 * [prefer-underscore-method](docs/rules/prefer-underscore-method.md): Prefer using Underscore collection methods (e.g. `_.map`) over native array methods.
