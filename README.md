@@ -84,7 +84,7 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-underscore-typecheck](docs/rules/prefer-underscore-typecheck.md): Prefer using `_.is*` methods over `typeof` and `instanceof` checks when applicable.
 * [prefer-where](docs/rules/prefer-where.md): Prefer `_.where` over `_.filter` when using matcher shorthand.
 * [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases
-* [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax
+* [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax (fixable)
 
 # List of Lodash rules which are __not__ yet supported
 

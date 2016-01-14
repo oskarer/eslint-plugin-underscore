@@ -43,10 +43,17 @@ ruleTester.run('prop-shorthand', rule, {
     ],
     invalid: [{
         code: 'var ids = _.map([], function (i) { return i.a; });',
-        errors: errors.always
+        errors: errors.always,
+        output: "var ids = _.map([], 'a');"
     }, {
-        code: 'var ids = _.map([], function (i) { return i["a"]; });',
-        errors: errors.always
+        code: 'var ids = _.map([], function (i) { return i["z"]; });',
+        errors: errors.always,
+        output: "var ids = _.map([], 'z');"
+    }, {
+        code: 'var r = _.map([], x => x.id);',
+        ecmaFeatures: {arrowFunctions: true},
+        errors: errors.always,
+        output: "var r = _.map([], 'id');"
     }, {
         code: 'var ids = _.map(arr, "id");',
         options: ['never'],

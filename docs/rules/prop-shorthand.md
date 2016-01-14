@@ -3,6 +3,8 @@
 When using certain method in Underscore such as map, it's possible to use the `_.property` callback shorthand. 
 This rule will enforce whether or not to use shorthand when possible to keep consistency in your code.
 
+**Fixable:** This rule (in "always" mode) is automatically fixable using the `--fix` flag on the command line.
+
 ## Rule Details
 
 This rule takes one argument, when to use shorthand: `always` or `never` (default is always`).
