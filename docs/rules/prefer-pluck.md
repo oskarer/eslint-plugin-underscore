@@ -6,6 +6,8 @@ objects. Underscore has a special method for handling this case: `_.pluck`.
 Using map with the property shorthand (passing a literal for the second
 argument) can be more intuitively written by using pluck.
 
+**Fixable:** This rule is automatically fixable using the `--fix` flag on the command line.
+
 ## Rule Details
 
 The following patterns are considered warnings:

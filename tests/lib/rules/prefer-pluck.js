@@ -36,13 +36,16 @@ ruleTester.run("prefer-pluck", rule, {
     invalid: [
         {
             code: "var ids = _.map(items, 'id');",
-            errors: errors
+            errors: errors,
+            output: "var ids = _.pluck(items, 'id');"
         }, {
             code: "var ids = _(items).map('id');",
-            errors: errors
+            errors: errors,
+            output: "var ids = _(items).pluck('id');"
         }, {
             code: "var ids = _.chain(items).map('id');",
-            errors: errors
+            errors: errors,
+            output: "var ids = _.chain(items).pluck('id');"
         }
     ]
 });
