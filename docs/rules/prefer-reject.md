@@ -1,10 +1,8 @@
 # Prefer reject
 
-When using _.filter with a negative condition, it could improve readability by switching to _.reject
+When using `_.filter` with a negative condition, it could improve readability by switching to `_.reject`
 
 ## Rule Details
-
-This rule takes one argument, maximum path length (default is 3).
 
 The following patterns are considered warnings:
 
