@@ -7,14 +7,13 @@
 var rule = require('../../../lib/rules/prop-shorthand');
 var RuleTester = require('eslint').RuleTester;
 
-
 // ------------------------------------------------------------------------------
 // Tests
 // ------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
 var errors = {
-    always: [{message: 'Prefer property shorthand syntax'}],
+    always: [{message: 'Prefer a "property" string to a function that returns a property'}],
     never: [{message: 'Do not use property shorthand syntax'}]
 };
 
