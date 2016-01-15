@@ -19,10 +19,11 @@ var rule = require("../../../lib/rules/prefer-pluck"),
 
 var ruleTester = new RuleTester();
 var wrongNameMessage = 'Prefer _.pluck to map when collecting a single property';
-var wrontSyntaxMessage = '_.pluck expects a string, "properyName", not a function' ;
+var wrongSyntaxMessage = '_.pluck expects a string, "properyName", not a function' ;
+
 var errors = {
     property: [{ message: wrongNameMessage }],
-    func: [{ message: wrontSyntaxMessage }, { message: wrongNameMessage }]
+    func: [{ message: wrongNameMessage }, { message: wrongSyntaxMessage }]
 }
 
 ruleTester.run("prefer-pluck", rule, {
