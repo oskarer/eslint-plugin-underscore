@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-underscore",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Jordan Eldredge <jordan@jordaneldredge.com>",
   "description": "Underscore specific linting rules for ESLint",
   "main": "index.js",
