@@ -11,41 +11,48 @@
 //------------------------------------------------------------------------------
 
 var rule = require("../../../lib/rules/prefer-pluck"),
-
     RuleTester = require("eslint").RuleTester;
-
 
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var errors = [{
-    message: "Prefer _.pluck to map when using property shorthand"
-}];
+var wrongNameMessage = 'Prefer _.pluck to map when collecting a single property';
+var wrontSyntaxMessage = '_.pluck expects a string, "properyName", not a function' ;
+var errors = {
+    property: [{ message: wrongNameMessage }],
+    func: [{ message: wrontSyntaxMessage }, { message: wrongNameMessage }]
+}
 
 ruleTester.run("prefer-pluck", rule, {
 
-
     valid: [
         "var ids = _.pluck(items, 'id');",
-        "var ids = _.map(items, function(item){ return item.id; });",
         "var ids = _.map(items, {id: 1});"
     ],
 
     invalid: [
         {
+            code: "var ids = _.map(items, function(item){ return item.id; });",
+            errors: errors.func,
+            output: "var ids = _.pluck(items, 'id');"
+        }, {
             code: "var ids = _.map(items, 'id');",
-            errors: errors,
+            errors: errors.property,
             output: "var ids = _.pluck(items, 'id');"
         }, {
             code: "var ids = _(items).map('id');",
-            errors: errors,
+            errors: errors.property,
             output: "var ids = _(items).pluck('id');"
         }, {
             code: "var ids = _.chain(items).map('id');",
-            errors: errors,
+            errors: errors.property,
             output: "var ids = _.chain(items).pluck('id');"
+        }, {
+            code: 'var ids = _.map([], function (i) { return i.a; });',
+            errors: errors.func,
+            output: "var ids = _.pluck([], 'a');"
         }
     ]
 });
