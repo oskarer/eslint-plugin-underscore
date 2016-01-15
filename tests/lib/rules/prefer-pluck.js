@@ -18,7 +18,7 @@ var rule = require("../../../lib/rules/prefer-pluck"),
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var errors = [{mesage: 'Prefer _.pluck to map when collecting a single property' }];
+var message = 'Prefer _.pluck to map when collecting a single property'
 
 ruleTester.run("prefer-pluck", rule, {
 
@@ -32,15 +32,15 @@ ruleTester.run("prefer-pluck", rule, {
     invalid: [
         {
             code: "var ids = _.map(items, 'id');",
-            errors: errors,
+            errors: [{mesage: message, column: 13}],
             output: "var ids = _.pluck(items, 'id');"
         }, {
             code: "var ids = _(items).map('id');",
-            errors: errors,
+            errors: [{mesage: message, column: 20}],
             output: "var ids = _(items).pluck('id');"
         }, {
             code: "var ids = _.chain(items).map('id');",
-            errors: errors,
+            errors: [{mesage: message, column: 26}],
             output: "var ids = _.chain(items).pluck('id');"
         }
     ]

@@ -12,10 +12,11 @@ var RuleTester = require('eslint').RuleTester;
 // ------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var errors = {
-    always: [{message: 'Prefer a "property" string to a function that returns a property'}],
-    never: [{message: 'Do not use property shorthand syntax'}]
-};
+
+var message = {
+    always:  'Prefer a "property" string to a function that returns a property',
+    never: 'Do not use property shorthand syntax'
+}
 
 ruleTester.run('prop-shorthand', rule, {
     valid: [
@@ -42,20 +43,20 @@ ruleTester.run('prop-shorthand', rule, {
     ],
     invalid: [{
         code: 'var ids = _.map([], function (i) { return i.a; });',
-        errors: errors.always,
+        errors: [{message: message.always, column: 21}],
         output: "var ids = _.map([], 'a');"
     }, {
         code: 'var ids = _.map([], function (i) { return i["z"]; });',
-        errors: errors.always,
+        errors: [{message: message.always, column: 21}],
         output: "var ids = _.map([], 'z');"
     }, {
         code: 'var r = _.map([], x => x.id);',
         ecmaFeatures: {arrowFunctions: true},
-        errors: errors.always,
+        errors: [{message: message.always, column: 19}],
         output: "var r = _.map([], 'id');"
     }, {
         code: 'var ids = _.map(arr, "id");',
         options: ['never'],
-        errors: errors.never
+        errors: [{message: message.never, column: 13}]
     }]
 });
