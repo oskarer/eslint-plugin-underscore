@@ -12,7 +12,7 @@ var RuleTester = require('eslint').RuleTester;
 // ------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var errors = [{message: 'Prefer _.map over a _.forEach with a push to an array inside'}];
+var errors = [{message: 'Prefer _.map over a _.each with a push to an array inside'}];
 ruleTester.run('prefer-map', rule, {
     valid: [
         'var x = _.map(arr, function(x) {return x + 7})',

@@ -66,15 +66,15 @@ Finally, enable all of the rules that you would like to use.
 
 # List of supported rules
 
-* [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of Underscore collection methods that aren't `forEach`.
+* [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of Underscore collection methods that aren't `each`.
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
 * [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
 * [prefer-constant](docs/rules/prefer-constant.md): Prefer `_.constant` over functions returning literals.
-* [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.forEach` with an `if` statement inside.
+* [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.each` with an `if` statement inside.
 * [prefer-findwhere](docs/rules/prefer-findwhere.md): Prefer `_.findWhere` over `_.find` when using matcher shorthand.
 * [prefer-invoke](docs/rules/prefer-invoke.md): Prefer using `_.invoke` over `_.map` with a method call inside.
-* [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.forEach` with a `push` inside.
+* [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.each` with a `push` inside.
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
 * [prefer-noop](docs/rules/prefer-noop.md): Prefer `_.noop` over empty functions.
 * [prefer-pluck](docs/rules/prefer-pluck.md): Prefer `_.pluck` over `_.map` when using property shorthand. (fixable)
