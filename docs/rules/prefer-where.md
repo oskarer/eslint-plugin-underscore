@@ -3,6 +3,8 @@
 Underscore offers a key/value object "matcher" syntax for most of it's
 collection functions. `_.where` is a variant of `_.filter`/`_.select` that only accepts the matcher syntax. In the matcher case, `_.where` is more readable.
 
+**Fixable:** This rule is automatically fixable using the `--fix` flag on the command line.
+
 ## Rule Details
 
 The following patterns are considered warnings:

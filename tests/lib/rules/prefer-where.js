@@ -11,9 +11,7 @@
 //------------------------------------------------------------------------------
 
 var rule = require("../../../lib/rules/prefer-where"),
-
     RuleTester = require("eslint").RuleTester;
-
 
 //------------------------------------------------------------------------------
 // Tests
@@ -31,16 +29,20 @@ ruleTester.run("prefer-where", rule, {
     invalid: [
         {
             code: "var red = _.filter(items, {color: 'red'});",
-            errors: errors
+            errors: errors,
+            output: "var red = _.where(items, {color: 'red'});"
         }, {
             code: "var blue = _.select(items, {color: 'blue'});",
-            errors: errors
+            errors: errors,
+            output: "var blue = _.where(items, {color: 'blue'});"
         }, {
             code: "var blue = _(items).select({color: 'blue'});",
-            errors: errors
+            errors: errors,
+            output: "var blue = _(items).where({color: 'blue'});"
         }, {
             code: "var blue = _.chain(items).select({color: 'blue'});",
-            errors: errors
+            errors: errors,
+            output: "var blue = _.chain(items).where({color: 'blue'});"
         }
     ]
 });
