@@ -14,7 +14,6 @@ var rule = require("../../../lib/rules/prefer-findwhere"),
 
     RuleTester = require("eslint").RuleTester;
 
-
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
@@ -31,16 +30,20 @@ ruleTester.run("prefer-where", rule, {
     invalid: [
         {
             code: "var red = _.find(items, {color: 'red'});",
-            errors: errors
+            errors: errors,
+            output: "var red = _.findWhere(items, {color: 'red'});"
         }, {
             code: "var blue = _.detect(items, {color: 'blue'});",
-            errors: errors
+            errors: errors,
+            output: "var blue = _.findWhere(items, {color: 'blue'});",
         }, {
             code: "var blue = _(items).detect({color: 'blue'});",
-            errors: errors
+            errors: errors,
+            output: "var blue = _(items).findWhere({color: 'blue'});",
         }, {
             code: "var blue = _.chain(items).detect({color: 'blue'});",
-            errors: errors
+            errors: errors,
+            output: "var blue = _.chain(items).findWhere({color: 'blue'});",
         }
     ]
 });

@@ -72,7 +72,7 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
 * [prefer-constant](docs/rules/prefer-constant.md): Prefer `_.constant` over functions returning literals.
 * [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.each` with an `if` statement inside.
-* [prefer-findwhere](docs/rules/prefer-findwhere.md): Prefer `_.findWhere` over `_.find` when using matcher shorthand.
+* [prefer-findwhere](docs/rules/prefer-findwhere.md): Prefer `_.findWhere` over `_.find` when using matcher shorthand. (fixable)
 * [prefer-invoke](docs/rules/prefer-invoke.md): Prefer using `_.invoke` over `_.map` with a method call inside.
 * [prefer-map](docs/rules/prefer-map.md): Prefer `_.map` over `_.each` with a `push` inside.
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
