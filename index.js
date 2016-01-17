@@ -1,7 +1,9 @@
 'use strict';
+
 var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
+
 var rules = fs.readdirSync(path.resolve(__dirname, 'lib', 'rules')).map(function (f) {
     return f.replace(/\.js$/, '');
 });

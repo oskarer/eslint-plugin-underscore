@@ -6,14 +6,13 @@
 
 var rule = require('../../../lib/rules/preferred-alias');
 var RuleTester = require('eslint').RuleTester;
+var toErrorObject = require('../testUtil/toErrorObject').fromMessage("Method 'forEach' is an alias, for consistency prefer using 'each'");
 
-
+var ruleTester = new RuleTester();
 // ------------------------------------------------------------------------------
 // Tests
 // ------------------------------------------------------------------------------
 
-var ruleTester = new RuleTester();
-var toErrorObject = require('../testUtil/toErrorObject').fromMessage("Method 'forEach' is an alias, for consistency prefer using 'each'");
 ruleTester.run('preferred-alias', rule, {
     valid: [
         '_.each();',
