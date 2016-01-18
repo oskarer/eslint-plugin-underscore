@@ -16,7 +16,7 @@ var ruleTester = new RuleTester();
 var message = {
     always:  'Prefer a "property" string to a function that returns a property',
     never: 'Do not use property shorthand syntax'
-}
+};
 
 ruleTester.run('prop-shorthand', rule, {
     valid: [

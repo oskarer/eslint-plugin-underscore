@@ -4,29 +4,29 @@
  * @copyright 2016 Jordan Eldredge <jordan@jordaneldredge.com>. All rights reserved.
  * See LICENSE file in root directory for full license.
  */
-"use strict";
+'use strict';
 
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/prefer-pluck"),
-    RuleTester = require("eslint").RuleTester;
+var rule = require('../../../lib/rules/prefer-pluck'),
+    RuleTester = require('eslint').RuleTester;
 
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var message = 'Prefer _.pluck to map when collecting a single property'
+var message = 'Prefer _.pluck to map when collecting a single property';
 
-ruleTester.run("prefer-pluck", rule, {
+ruleTester.run('prefer-pluck', rule, {
 
     valid: [
         "var ids = _.pluck(items, 'id');",
-        "var ids = _.map(items, {id: 1});",
-        "var ids = _.map(items, function(item){ return item.id; });",
-        'var ids = _.map([], function (i) { return i.a; });',
+        'var ids = _.map(items, {id: 1});',
+        'var ids = _.map(items, function(item){ return item.id; });',
+        'var ids = _.map([], function (i) { return i.a; });'
     ],
 
     invalid: [
