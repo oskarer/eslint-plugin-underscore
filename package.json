@@ -18,10 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/captbaritone/eslint-plugin-lodash3"
+    "url": "https://github.com/captbaritone/eslint-plugin-underscore"
   },
-  "homepage": "https://github.com/captbaritone/eslint-plugin-lodash3",
-  "bugs": "https://github.com/captbaritone/eslint-plugin-lodash3/issues",
+  "homepage": "https://github.com/captbaritone/eslint-plugin-underscore",
+  "bugs": "https://github.com/captbaritone/eslint-plugin-underscore/issues",
   "dependencies": {
     "lodash": "^3.10.1"
   },
