@@ -17,9 +17,13 @@ ruleTester.run('prefer-map', rule, {
     valid: [
         'var x = _.map(arr, function(x) {return x + 7})',
         '_.forEach(arr, function(x) { if (x.a) {a.push(x)}})',
+        '_.each(arr, function(x) { if (x.a) {a.push(x)}})',
         '_.forEach(arr, function (x){ a.push(x); if (f(x)) {a.push(b)}});'
     ],
     invalid: [{
+        code: '_.each(arry, function(x) { a.push(x)})',
+        errors: errors
+    }, {
         code: '_(arr).forEach(function(x) { a.push(x)})',
         errors: errors
     }, {
