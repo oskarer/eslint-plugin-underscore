@@ -34,6 +34,8 @@ Finally, enable all of the rules that you would like to use.
   "rules": {
     "underscore/collection-return": 2,
     "underscore/jquery-each": [2, "never"],
+    "underscore/jquery-extend": [2, "never"],
+    "underscore/jquery-proxy": [2, "never"],
     "underscore/matches-shorthand": [2, "always"],
     "underscore/no-unnecessary-bind": 2,
     "underscore/prefer-compact": 2,
