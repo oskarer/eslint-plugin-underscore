@@ -14,7 +14,7 @@ var RuleTester = require('eslint').RuleTester;
 var ruleTester = new RuleTester();
 
 var message = {
-    always:  'Prefer a "property" string to a function that returns a property',
+    always: 'Prefer a "property" string to a function that returns a property',
     never: 'Do not use property shorthand syntax'
 };
 
