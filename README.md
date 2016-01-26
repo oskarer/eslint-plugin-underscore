@@ -1,4 +1,4 @@
-Forked from [eslint-plugin-lodash3](https://github.com/wix/eslint-plugin-lodash3)
+Forked from [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash)
 
 ESLint-plugin-underscore
 ===================
