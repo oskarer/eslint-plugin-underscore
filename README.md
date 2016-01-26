@@ -38,6 +38,7 @@ Finally, enable all of the rules that you would like to use.
     "underscore/jquery-proxy": [2, "never"],
     "underscore/matches-shorthand": [2, "always"],
     "underscore/no-unnecessary-bind": 2,
+    "underscore/prefer-chain": [2, 3],
     "underscore/prefer-compact": 2,
     "underscore/prefer-constant": 2,
     "underscore/prefer-filter": 2,
@@ -56,7 +57,6 @@ Finally, enable all of the rules that you would like to use.
     "underscore/prop-shorthand": [2, "always"],
 
     // The below rules are not (yet) supported
-    "underscore/prefer-chain": [2, 3],
     "underscore/no-single-chain": 2,
     "underscore/unwrap": 2,
     "underscore/no-double-unwrap": 2,
@@ -75,6 +75,7 @@ Finally, enable all of the rules that you would like to use.
 * [jquery-proxy](docs/rules/jquery-proxy.md): Standardize on either Underscore's bind or jQuery's proxy function.
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
 * [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
+* [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested Underscore calls
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
 * [prefer-constant](docs/rules/prefer-constant.md): Prefer `_.constant` over functions returning literals.
 * [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.each` with an `if` statement inside.
@@ -94,7 +95,6 @@ Finally, enable all of the rules that you would like to use.
 
 # List of Lodash rules which are __not__ yet supported
 
-* [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested lodash calls
 * [no-single-chain](docs/rules/no-single-chain.md): Prevent chaining syntax for single method, e.g. `_(x).map().value()`
 * [unwrap](docs/rules/unwrap.md): Prevent chaining without evaluation via `value()` or non-chainable methods like `max()`.,
 * [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`)
