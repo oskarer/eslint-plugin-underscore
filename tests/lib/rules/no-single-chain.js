@@ -17,10 +17,14 @@ var toErrorObject = require('../testUtil/toErrorObject').fromMessage('Do not use
 ruleTester.run('no-single-chain', rule, {
     valid: [
         'var x = _.map(arr, f)',
-        'var x = _(arr).map(f).filter(g).value()'
+        'var x = _(arr).map(f).filter(g).value()',
+        'var x = _(arr).map(f).filter(g).valueOf()'
     ],
     invalid: [
         'var x = _(arr).map(f).value()',
+        'var x = _(arr).map(f).valueOf()',
+        'var x = _(arr).map(f).toJSON()',
+        'var x = _(arr).map(f).toString()',
         'var x = _(arr).reduce(f, i)'
     ].map(toErrorObject)
 });
