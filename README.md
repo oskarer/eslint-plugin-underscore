@@ -69,6 +69,7 @@ Finally, enable all of the rules that you would like to use.
 
 * [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of Underscore collection methods that aren't `each`.
 * [jquery-each](docs/rules/jquery-each.md): Standardize on either Underscore's or jQuery's each function.
+* [jquery-extend](docs/rules/jquery-extend.md): Standardize on either Underscore's or jQuery's extend function.
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
 * [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
