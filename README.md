@@ -73,9 +73,9 @@ Finally, enable all of the rules that you would like to use.
 * [jquery-each](docs/rules/jquery-each.md): Standardize on either Underscore's or jQuery's each function.
 * [jquery-extend](docs/rules/jquery-extend.md): Standardize on either Underscore's or jQuery's extend function.
 * [jquery-proxy](docs/rules/jquery-proxy.md): Standardize on either Underscore's bind or jQuery's proxy function.
-* [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax
+* [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax.
 * [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
-* [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested Underscore calls
+* [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested Underscore calls.
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
 * [prefer-constant](docs/rules/prefer-constant.md): Prefer `_.constant` over functions returning literals.
 * [prefer-filter](docs/rules/prefer-filter.md): Prefer `_.filter` over `_.each` with an `if` statement inside.
@@ -85,19 +85,19 @@ Finally, enable all of the rules that you would like to use.
 * [prefer-matches](docs/rules/prefer-matches.md): Prefer `_.matches` over conditions like `a.foo === 1 && a.bar === 2 && a.baz === 3`.
 * [prefer-noop](docs/rules/prefer-noop.md): Prefer `_.noop` over empty functions.
 * [prefer-pluck](docs/rules/prefer-pluck.md): Prefer `_.pluck` over `_.map` when using property shorthand. (fixable)
-* [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`
+* [prefer-reject](docs/rules/prefer-reject.md): Prefer `_.reject` over filter with `!(expression)` or `x.prop1 !== value`.
 * [prefer-times](docs/rules/prefer-times.md): Prefer `_.times` over `_.map` without using the iteratee's arguments.
 * [prefer-underscore-method](docs/rules/prefer-underscore-method.md): Prefer using Underscore collection methods (e.g. `_.map`) over native array methods.
 * [prefer-underscore-typecheck](docs/rules/prefer-underscore-typecheck.md): Prefer using `_.is*` methods over `typeof` and `instanceof` checks when applicable.
 * [prefer-where](docs/rules/prefer-where.md): Prefer `_.where` over `_.filter` when using matcher shorthand. (fixable)
-* [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases
-* [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax (fixable)
+* [preferred-alias](docs/rules/preferred-alias.md): Preferred aliases.
+* [prop-shorthand](docs/rules/prop-shorthand.md): Prefer property shorthand syntax. (fixable)
 
 # List of Lodash rules which are __not__ yet supported
 
-* [no-single-chain](docs/rules/no-single-chain.md): Prevent chaining syntax for single method, e.g. `_(x).map().value()`
-* [unwrap](docs/rules/unwrap.md): Prevent chaining without evaluation via `value()` or non-chainable methods like `max()`.,
-* [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`)
+* [no-single-chain](docs/rules/no-single-chain.md): Prevent chaining syntax for single method, e.g. `_(x).map().value()`.
+* [unwrap](docs/rules/unwrap.md): Prevent chaining without evaluation via `value()` or non-chainable methods like `max()`.
+* [no-double-unwrap](docs/rules/no-double-unwrap.md): Do not use `.value()` on chains that have already ended (e.g. with `max()` or `reduce()`).
 * [prefer-wrapper-method](docs/rules/prefer-wrapper-method.md): Prefer using array and string methods in the chain and not the initial value, e.g. `_(str).split(' ')...`
 * [prefer-lodash-chain](docs/rules/prefer-lodash-chain.md): Prefer using Lodash chains (e.g. `_.map`) over native and mixed chains.
 * [chain-style](docs/rules/chain-style.md): Enforce a specific chain style: explicit, implicit, or explicit only when necessary.
