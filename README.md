@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/captbaritone/eslint-plugin-underscore.svg?branch=master)](https://travis-ci.org/captbaritone/eslint-plugin-underscore)
+
 Forked from [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash)
 
 ESLint-plugin-underscore
