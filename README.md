@@ -37,7 +37,6 @@ Finally, enable all of the rules that you would like to use.
     "underscore/collection-return": 2,
     "underscore/jquery-each": [2, "never"],
     "underscore/jquery-extend": [2, "never"],
-    "underscore/jquery-merge": [2, "never"],
     "underscore/jquery-proxy": [2, "never"],
     "underscore/matches-shorthand": [2, "always"],
     "underscore/no-unnecessary-bind": 2,
@@ -76,7 +75,6 @@ Finally, enable all of the rules that you would like to use.
 * [jquery-each](docs/rules/jquery-each.md): Standardize on either Underscore's or jQuery's each function.
 * [jquery-extend](docs/rules/jquery-extend.md): Standardize on either Underscore's or jQuery's extend function.
 * [jquery-proxy](docs/rules/jquery-proxy.md): Standardize on either Underscore's bind or jQuery's proxy function.
-* [jquery-merge](docs/rules/jquery-merge.md): Standardize on either Underscore's union or jQuery's merge function.
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax.
 * [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
 * [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested Underscore calls.
