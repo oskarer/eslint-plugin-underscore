@@ -39,6 +39,7 @@ Finally, enable all of the rules that you would like to use.
     "underscore/jquery-extend": [2, "never"],
     "underscore/jquery-proxy": [2, "never"],
     "underscore/matches-shorthand": [2, "always"],
+    "underscore/no-return-value-from-each-iteratee": 2,
     "underscore/no-unnecessary-bind": 2,
     "underscore/prefer-chain": [2, 3],
     "underscore/prefer-compact": 2,
@@ -76,6 +77,7 @@ Finally, enable all of the rules that you would like to use.
 * [jquery-extend](docs/rules/jquery-extend.md): Standardize on either Underscore's or jQuery's extend function.
 * [jquery-proxy](docs/rules/jquery-proxy.md): Standardize on either Underscore's bind or jQuery's proxy function.
 * [matches-shorthand](docs/rules/matches-shorthand.md): Prefer matches shorthand syntax.
+* [no-return-value-from-each-iteratee](docs/rules/no-return-value-from-each-iteratee.md): Do not return a value from the iteratee of `_.each`.
 * [no-unnecessary-bind](docs/rules/no-unnecessary-bind.md): Prefer passing `thisArg` over binding.
 * [prefer-chain](docs/rules/prefer-chain.md): Prefer chain over nested Underscore calls.
 * [prefer-compact](docs/rules/prefer-compact.md): Prefer `_.compact` over `_.filter` for only truthy values.
