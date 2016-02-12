@@ -25,31 +25,4 @@ var mediums = _.where(items, {size: 4});
 
 ## Further Reading
 
-[Underscore's pluck documentation](http://underscorejs.org/#pluck)
-
-Please describe the origin of the rule here.
-
-
-## Rule Details
-
-This rule aims to...
-
-The following patterns are considered warnings:
-
-```js
-
-// fill me in
-
-```
-
-The following patterns are not warnings:
-
-```js
-
-// fill me in
-
-```
-
-## Further Reading
-
 [Underscore's where documentation](http://underscorejs.org/#where)

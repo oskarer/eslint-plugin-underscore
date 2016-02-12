@@ -28,5 +28,3 @@ var medium = _.findWhere(items, {size: 4});
 ## Further Reading
 
 [Underscore's findWhere documentation](http://underscorejs.org/#findWhere)
-
-Please describe the origin of the rule here.
