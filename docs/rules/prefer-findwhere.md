@@ -1,6 +1,6 @@
 # Prefer using _.findWhere to _.find when searching with a matcher. (prefer-where)
 
-Underscore offers a key/value object "matcher" syntax for most of it's
+Underscore offers a key/value object "matcher" syntax for most of its
 collection functions. `_.findWhere` is a variant of `_.find`/`_.detect` that only accepts the matcher syntax. In the matcher case, `_.findWhere` is more readable.
 
 **Fixable:** This rule is automatically fixable using the `--fix` flag on the command line.
