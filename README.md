@@ -35,6 +35,7 @@ Finally, enable all of the rules that you would like to use.
 {
   "rules": {
     "underscore/collection-return": 2,
+    "underscore/identity-shorthand": [2, "always"],
     "underscore/jquery-each": [2, "never"],
     "underscore/jquery-extend": [2, "never"],
     "underscore/jquery-proxy": [2, "never"],
@@ -73,6 +74,7 @@ Finally, enable all of the rules that you would like to use.
 # List of supported rules
 
 * [collection-return](docs/rules/collection-return.md): Always return a value in iteratees of Underscore collection methods that aren't `each`.
+* [identity-shorthand](docs/rules/identity-shorthand.md): Prefer identity shorthand syntax.
 * [jquery-each](docs/rules/jquery-each.md): Standardize on either Underscore's or jQuery's each function.
 * [jquery-extend](docs/rules/jquery-extend.md): Standardize on either Underscore's or jQuery's extend function.
 * [jquery-proxy](docs/rules/jquery-proxy.md): Standardize on either Underscore's bind or jQuery's proxy function.
