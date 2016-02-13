@@ -50,6 +50,14 @@ ruleTester.run('prop-shorthand', rule, {
         errors: [{message: message.always, column: 21}],
         output: "var ids = _.map([], 'z');"
     }, {
+        code: 'var ids = _([]).map(function (i) { return i["z"]; });',
+        errors: [{message: message.always, column: 21}],
+        output: "var ids = _([]).map('z');"
+    }, {
+        code: 'var ids = _.chain([]).map(function (i) { return i["z"]; }).value();',
+        errors: [{message: message.always, column: 27}],
+        output: "var ids = _.chain([]).map('z').value();"
+    }, {
         code: 'var r = _.map([], x => x.id);',
         ecmaFeatures: {arrowFunctions: true},
         errors: [{message: message.always, column: 19}],
