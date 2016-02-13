@@ -12,7 +12,7 @@ This rule takes one argument, when to use shorthand: `always` or `never` (defaul
 The following patterns are considered warnings:
 
 ```js
-/*eslint Underscore/prop-shorthand: [2, "always"]
+/*eslint Underscore/prop-shorthand: [2, "always"]*/
 var ids = _.map(users, function (user) {
   return user.name;
 });
@@ -21,7 +21,7 @@ var ids = _.map(users, function (user) {
 The following patterns are not considered warnings:
 
 ```js
-/*eslint Underscore/prop-shorthand: [2, "never"]
+/*eslint Underscore/prop-shorthand: [2, "never"]*/
 var ids = _.map(users, function (user) {
   return user.name;
 });

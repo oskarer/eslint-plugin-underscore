@@ -10,7 +10,7 @@ This rule takes one argument, when to use shorthand: `always` or `never` (defaul
 The following patterns are considered warnings:
 
 ```js
-/*eslint Underscore/prop-shorthand: [2, "always"]
+/*eslint Underscore/prop-shorthand: [2, "always"]*/
 var topScore = _.max(scores, function (score) {
   return score;
 });
@@ -19,7 +19,7 @@ var topScore = _.max(scores, function (score) {
 The following patterns are not considered warnings:
 
 ```js
-/*eslint Underscore/prop-shorthand: [2, "always"]
+/*eslint Underscore/prop-shorthand: [2, "always"]*/
 var topScore = _.max(scores);
 ```
 

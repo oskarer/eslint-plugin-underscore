@@ -10,7 +10,7 @@ This rule takes one argument, when to use shorthand: `always` or `never` (defaul
 The following patterns are considered warnings:
 
 ```js
-/*eslint Underscore/matches-shorthand: [2, "always"]
+/*eslint Underscore/matches-shorthand: [2, "always"]*/
 var ids = _.find(users, function (user) {
   return user.name === 'Joe' && user.type === 'admin';
 });
@@ -19,14 +19,14 @@ var ids = _.find(users, function (user) {
 The following patterns are not considered warnings:
 
 ```js
-/*eslint Underscore/prop-shorthand: [2, "always"]
+/*eslint Underscore/prop-shorthand: [2, "always"]*/
 var ids = _.filter(users, function (user) {
   return user.name !== 'Joe';
 });
 ```
 
 ```js
-/*eslint Underscore/prop-shorthand: [2, "always"]
+/*eslint Underscore/prop-shorthand: [2, "always"]*/
 var ids = _.filter(users, {name: 'Joe'});
 });
 ```
