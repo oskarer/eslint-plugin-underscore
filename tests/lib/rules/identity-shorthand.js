@@ -34,6 +34,9 @@ ruleTester.run('identity-shorthand', rule, {
         {
             code: 'var x = _.isUndefined(a)',
             options: ['never']
+        }, {
+            code: 'var x = _.chain(a).filter(f).pick("prop").value()',
+            options: ['never']
         }
     ],
     invalid: [{
