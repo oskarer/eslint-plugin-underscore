@@ -30,7 +30,11 @@ ruleTester.run('identity-shorthand', rule, {
             options: ['never'],
             ecmaFeatures: {arrowFunctions: true}
         },
-        'var twos = _.map(a, function() { return 2; });'
+        'var twos = _.map(a, function() { return 2; });',
+        {
+            code: 'var x = _.isUndefined(a)',
+            options: ['never']
+        }
     ],
     invalid: [{
         code: 'var ids = _.map([], function (i) { return i; });',
